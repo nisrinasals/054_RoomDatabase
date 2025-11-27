@@ -43,3 +43,9 @@ data class UIStateSiswa(
     val isEntryValid: Boolean = false
 )
 
+fun DetailSiswa.toSiswa(): Siswa = Siswa(
+    id = id,
+    nama = nama,
+    alamat = alamat,
+    telpon = telpon
+)
